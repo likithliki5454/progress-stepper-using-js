@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h1>PLEASE FILL THE DETAILS</h1>
+        <div class="bar">
+          <div id="1" class="selectprogress">step1</div>
+          <div id="2">step2</div>
+          <div id="3">step3</div>
+          <div id="4">step4</div>
+        </div>
+
+        <div class="inputs">
+          <div id="step1" class="step">
+            <input
+              type="name"
+              placeholder="Enter your name"
+              name="name"
+              required
+              id="input1"
+              class="input"
+            />
+            
+
+            <div class="buttons">
+              <button onclick="next(1)">Next</button>
+            </div>
+          </div>
+
+          <div id="step2" class="step">
+            <input
+              type="text"
+              placeholder="Enter your qualification"
+              name="education"
+              id="input2"
+              class="input"
+            />
+
+            <div class="buttons">
+              <button onclick="previous(2)">Previous</button>
+              <button onclick="next(2)">Next</button>
+            </div>
+          </div>
+
+          <div id="step3" class="step">
+            <input
+              type="text"
+              placeholder="Enter your adress"
+              name="adress"
+              id="input3"
+              class="input"
+            />
+            <div class="buttons">
+              <button onclick="previous(3)">Previous</button>
+              <button onclick="next(3)">Next</button>
+            </div>
+          </div>
+
+          <div id="step4" class="step">
+            <div class="input" id="finalmessage"><b> Submit the form</b></div>
+            <div class="buttons">
+              <button onclick="previous(4)">Previous</button>
+              <button onclick="submit()" class="submitbtn">Submit</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="sucess"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
